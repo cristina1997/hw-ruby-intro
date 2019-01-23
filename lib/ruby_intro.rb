@@ -4,10 +4,14 @@
 
 def sum arr
   # YOUR CODE HERE
+  nums = Array[1, 2, 3, 4];
+  puts nums.sum
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  nums = Array[0, 5, 10]
+  puts nums.max(2).sum
 end
 
 def sum_to_n? arr, n
