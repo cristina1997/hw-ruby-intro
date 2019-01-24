@@ -13,6 +13,7 @@ def max_2_sum arr
   # YOUR CODE HERE
   # nums = Array[0, 5, 10]
   # puts nums.max(2).sum
+  # Source code adapted from: https://stackoverflow.com/questions/19350524/how-to-sum-the-largest-two-elements-in-an-array/33507068
   return arr.max(2).sum
 end
 
@@ -35,10 +36,18 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
+  # Source code adapted from: https://stackoverflow.com/questions/18406509/using-regexp-to-check-whether-a-string-starts-with-a-consonant
+  return s =~ /\A[^aeiou]/
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  # YOUR CODE 
+  # Source code adapted from: https://github.com/merrua/ruby/blob/master/binary_multiple_of_4.rb
+  if s == "0"
+    return true
+  elsif /^[10]*00$/.match(s)
+    return true
+  end
 end
 
 # Part 3
